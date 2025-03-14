@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <title>Blue Brick - Home</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/mediaQueries.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="position-fixed bg-light top-0 start-0  z-3">
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                  <!-- Brand Logo and Name -->
+                  <a href="./home.html" class="navbar-brand d-flex align-items-center">
+                      <img src="./assets/logo/bluebricks_logo" alt="BlueBricks Logo" class="logo">
+                      <h3 class="ms-2 mb-0">BlueBricks</h3>
+                  </a>
+              
+                  <!-- Toggler for Mobile View -->
+                  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              </div>
+              
+      
+              <!-- Navbar Links with Space -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a href="./home.html" class="nav-link">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./properties.html" class="nav-link">Properties</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./about.html" class="nav-link">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./blogs.html" class="nav-link">Blogs</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./contact.html" class="nav-link">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./listYourHome.html" class="nav-link">List Your Home</a>
+                      </li>
+                  </ul>
+              </div>
+              
+          </div>
+      </nav>        
+    </header>
+    <main>
+      <!-- video section starts -->
+      <section class="container-fluid --video-section-container">
+        <div  class="carousel slide --video-carousel" id="video-carousel">
+          <div class="carousel-inner --video-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card --video-card">
+                  <video src="./assets/videos/exteriror.mp4" autoplay loop class="--video"></video>
+                  <div class="card-body --video-card-body">
+                    <div data-aos="zoom-in" class="card-title h4 --video-title">
+                      Discover Our Latest Properties
+                    </div>
+                    <div  class="card-text --video-text">
+                      <p>Discover our latest properties in our beautiful neighborhoods. View our extensive listings and book your perfect home today.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card --video-card">
+                  <video src="./assets/videos/intro1.mp4" autoplay loop class="--video"></video>
+                  <div class="card-body --video-card-body">
+                    <div data-aos="zoom-in" class="card-title h4 --video-title">
+                      Discover Our Latest Properties
+                    </div>
+                    <div  class="card-text --video-text">
+                      <p>Discover our latest properties in our beautiful neighborhoods. View our extensive listings and book your perfect home today.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <button class="carousel-control-prev --video-prev" type="button" data-bs-target="#video-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next --video-next" type="button" data-bs-target="#video-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> 
+      <!-- video section ends -->
+      
+        <!-- carousel start -->
+        <section data-aos="zoom-out-down" class="container-fluid">
+          <div id="carouselExample" class="section carousel slide --position-relative mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner --image-carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/images/buildings.jpeg" alt="..." class="carousel-img">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/building2.png" alt="..." class="carousel-img">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/building3.png" alt="..." class="carousel-img">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+  
+            <div class="search-card position-absolute">
+              <div class="container my-4">
+                <div class="row justify-content-center align-items-center g-3">
+                  <!-- Dropdown -->
+                  <div class="col-md-3">
+                    <select class="form-select" id="property-type">
+                      <option value="Rent">Rent</option>
+                      <option value="Sell">Sell</option>
+                      <option value="Event">Event</option>
+                      <option value="Office">Office</option>
+                    </select>
+                  </div>
+              
+                  <!-- Search Input -->
+                  <div class="col-md-6">
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      placeholder="Search properties by location or price range" 
+                      aria-label="Search">
+                  </div>
+              
+                  <!-- Buttons -->
+                  <div class="col-md-3 text-center">
+                    <button type="button" class="btn search-card-btn me-2"><i class="fa-solid fa-location-crosshairs"></i></button>
+                    <button type="button" class="btn search-card-btn">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- carousel end -->
+
+        <!-- properties grid start -->
+        <section class="container --property-grid">
+          <!-- Section Title -->
+          <h1 data-aos="zoom-out-up" class="text-center my-5 --property-section-title">Our Properties</h1>
+          
+          <!-- Properties Cards -->
+          <div data-aos="zoom-out" class="row">
+              <div data-aos="zoom-in-up" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card position-relative">
+                    <div class="p-2">
+                        <!-- in place of image use video -->
+                        <!-- uncomment the video tag when you are having the video -->
+                        <div class="video-container">
+                            <video id="myVideo" class="w-100 --v">
+                              <source src="./assets/videos/sample.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <button id="playButton" class="play-button">
+                              <i class="fa-solid fa-play" style="font-size: 24px;"></i>
+                            </button>
+                        </div>
+                        <!-- <img src="./assets/images/building3.png" alt="Property 1" class="card-img-top"> -->
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Property Title</h5>
+                        <p class="card-text">Location: City, State</p>
+                        <div class="card-text">
+                            <p><span class="fw-bold --information">Type :</span> furnished/ Semi Furnished</p>
+                            <div class="--information-section">
+                                <p class="">Information</p>
+                                <ul>
+                                    <li>2 kms from railway station</li>
+                                    <li>4 kms from Bus station</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="card-text --offer-badge">Book Now & Get 1 month Rent off</p>
+                        <a href="#" class="btn --contact-us">contact us</a>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card position-relative">
+                    <div class="p-2">
+                        <!-- in place of image use video -->
+                        <!-- uncomment the video tag when you are having the video -->
+                        <div class="video-container">
+                            <video id="myVideo" class="w-100 --v">
+                              <source src="./assets/videos/sample.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <button id="playButton" class="play-button">
+                              <i class="fa-solid fa-play" style="font-size: 24px;"></i>
+                            </button>
+                        </div>
+                        <!-- <img src="./assets/images/building3.png" alt="Property 1" class="card-img-top"> -->
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Property Title</h5>
+                        <p class="card-text">Location: City, State</p>
+                        <div class="card-text">
+                            <p><span class="fw-bold --information">Type :</span> furnished/ Semi Furnished</p>
+                            <div class="--information-section">
+                                <p class="">Information</p>
+                                <ul>
+                                    <li>2 kms from railway station</li>
+                                    <li>4 kms from Bus station</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="card-text --offer-badge">Book Now & Get 1 month Rent off</p>
+                        <a href="#" class="btn --contact-us">contact us</a>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card position-relative">
+                    <div class="p-2">
+                        <!-- in place of image use video -->
+                        <!-- uncomment the video tag when you are having the video -->
+                        <div class="video-container">
+                            <video id="myVideo" class="w-100 --v">
+                              <source src="./assets/videos/sample.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <button id="playButton" class="play-button">
+                              <i class="fa-solid fa-play" style="font-size: 24px;"></i>
+                            </button>
+                        </div>
+                        <!-- <img src="./assets/images/building3.png" alt="Property 1" class="card-img-top"> -->
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Property Title</h5>
+                        <p class="card-text">Location: City, State</p>
+                        <div class="card-text">
+                            <p><span class="fw-bold --information">Type :</span> furnished/ Semi Furnished</p>
+                            <div class="--information-section">
+                                <p class="">Information</p>
+                                <ul>
+                                    <li>2 kms from railway station</li>
+                                    <li>4 kms from Bus station</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="card-text --offer-badge">Book Now & Get 1 month Rent off</p>
+                        <a href="#" class="btn --contact-us">contact us</a>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card position-relative">
+                    <div class="p-2">
+                        <!-- in place of image use video -->
+                        <!-- uncomment the video tag when you are having the video -->
+                        <div class="video-container">
+                            <video id="myVideo" class="w-100 --v">
+                              <source src="./assets/videos/sample.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <button id="playButton" class="play-button">
+                              <i class="fa-solid fa-play" style="font-size: 24px;"></i>
+                            </button>
+                        </div>
+                        <!-- <img src="./assets/images/building3.png" alt="Property 1" class="card-img-top"> -->
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Property Title</h5>
+                        <p class="card-text">Location: City, State</p>
+                        <div class="card-text">
+                            <p><span class="fw-bold --information">Type :</span> furnished/ Semi Furnished</p>
+                            <div class="--information-section">
+                                <p class="">Information</p>
+                                <ul>
+                                    <li>2 kms from railway station</li>
+                                    <li>4 kms from Bus station</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="card-text --offer-badge">Book Now & Get 1 month Rent off</p>
+                        <a href="#" class="btn --contact-us">contact us</a>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card position-relative">
+                    <div class="p-2">
+                        <!-- in place of image use video -->
+                        <!-- uncomment the video tag when you are having the video -->
+                        <div class="video-container">
+                            <video id="myVideo" class="w-100 --v">
+                              <source src="./assets/videos/sample.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <button id="playButton" class="play-button">
+                              <i class="fa-solid fa-play" style="font-size: 24px;"></i>
+                            </button>
+                        </div>
+                        <!-- <img src="./assets/images/building3.png" alt="Property 1" class="card-img-top"> -->
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Property Title</h5>
+                        <p class="card-text">Location: City, State</p>
+                        <div class="card-text">
+                            <p><span class="fw-bold --information">Type :</span> furnished/ Semi Furnished</p>
+                            <div class="--information-section">
+                                <p class="">Information</p>
+                                <ul>
+                                    <li>2 kms from railway station</li>
+                                    <li>4 kms from Bus station</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="card-text --offer-badge">Book Now & Get 1 month Rent off</p>
+                        <a href="#" class="btn --contact-us">contact us</a>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card position-relative">
+                    <div class="p-2">
+                        <!-- in place of image use video -->
+                        <!-- uncomment the video tag when you are having the video -->
+                        <div class="video-container">
+                            <video id="myVideo" class="w-100 --v">
+                              <source src="./assets/videos/sample.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <button id="playButton" class="play-button">
+                              <i class="fa-solid fa-play" style="font-size: 24px;"></i>
+                            </button>
+                        </div>
+                        <!-- <img src="./assets/images/building3.png" alt="Property 1" class="card-img-top"> -->
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Property Title</h5>
+                        <p class="card-text">Location: City, State</p>
+                        <div class="card-text">
+                            <p><span class="fw-bold --information">Type :</span> furnished/ Semi Furnished</p>
+                            <div class="--information-section">
+                                <p class="">Information</p>
+                                <ul>
+                                    <li>2 kms from railway station</li>
+                                    <li>4 kms from Bus station</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="card-text --offer-badge">Book Now & Get 1 month Rent off</p>
+                        <a href="#" class="btn --contact-us">contact us</a>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card position-relative">
+                    <div class="p-2">
+                        <!-- in place of image use video -->
+                        <!-- uncomment the video tag when you are having the video -->
+                        <div class="video-container">
+                            <video id="myVideo" class="w-100 --v">
+                              <source src="./assets/videos/sample.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <button id="playButton" class="play-button">
+                              <i class="fa-solid fa-play" style="font-size: 24px;"></i>
+                            </button>
+                        </div>
+                        <!-- <img src="./assets/images/building3.png" alt="Property 1" class="card-img-top"> -->
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Property Title</h5>
+                        <p class="card-text">Location: City, State</p>
+                        <div class="card-text">
+                            <p><span class="fw-bold --information">Type :</span> furnished/ Semi Furnished</p>
+                            <div class="--information-section">
+                                <p class="">Information</p>
+                                <ul>
+                                    <li>2 kms from railway station</li>
+                                    <li>4 kms from Bus station</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="card-text --offer-badge">Book Now & Get 1 month Rent off</p>
+                        <a href="#" class="btn --contact-us">contact us</a>
+                    </div>
+                </div>
+              </div>
+              
+              <div data-aos="zoom-out-left" class="col-12 col-md-4 col-lg-3 mb-3">
+                <div class="card h-100 --view-more-card d-flex justify-content-center align-items-center">
+                  <a href="./properties.html" class="text-decoration-none">
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                      <p>view more</p> 
+                      <p><i class="fa-solid fa-angles-right"></i></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!-- properties grid end -->
+        
+         <!-- customers feedback start -->
+<!--         <section>
+          <div  class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h1 class="section-title">What our clients say</h1>
+                </div>
+              </div>
+              <div id="feedback" class="row">
+                  <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card testimonial-card">
+                      <div class="reviewer-info mt-3">
+                        <div class="image-container">
+                          <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                        </div>
+                        <div class="flex-grow-1">
+                          <div class="user-info">
+                            <p class="reviewer-name">Emily</p>
+                            <p class="review-date">23/01/2025</p>
+                          </div>
+                          <div class="rating mt-2 text-center">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt filled"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        
+                        <div class="review-text">
+                          <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                          <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card testimonial-card">
+                      <div class="reviewer-info mt-3">
+                        <div class="image-container">
+                          <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                        </div>
+                        <div class="flex-grow-1">
+                          <div class="user-info">
+                            <p class="reviewer-name">Emily</p>
+                            <p class="review-date">23/01/2025</p>
+                          </div>
+                          <div class="rating mt-2 text-center">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt filled"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        
+                        <div class="review-text">
+                          <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                          <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card testimonial-card">
+                      <div class="reviewer-info mt-3">
+                        <div class="image-container">
+                          <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                        </div>
+                        <div class="flex-grow-1">
+                          <div class="user-info">
+                            <p class="reviewer-name">Emily</p>
+                            <p class="review-date">23/01/2025</p>
+                          </div>
+                          <div class="rating mt-2 text-center">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt filled"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        
+                        <div class="review-text">
+                          <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                          <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+              </div>
+          </div>
+        </section> -->
+        <section>
+          <h2 data-aos="zoom-out-up" class="text-center ">Customer Feedback</h2>
+          <div data-aos="zoom-in-up" class="feedback-section">
+            <div class="container">
+              <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner --carousel-inner">
+                    <div class="carousel-item active --carousel-inner">
+                        <div class="--cards-wrapper container">
+                          <div id="feedback" class="row">
+                            <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                              <div class="card testimonial-card">
+                                <div class="reviewer-info mt-3">
+                                  <div class="image-container">
+                                    <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <div class="user-info">
+                                      <p class="reviewer-name">Emily</p>
+                                      <p class="review-date">23/01/2025</p>
+                                    </div>
+                                    <div class="rating mt-2 text-center">
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star-half-alt filled"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-body">
+                                  
+                                  <div class="review-text">
+                                    <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                    <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  
+                            <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                              <div class="card testimonial-card">
+                                <div class="reviewer-info mt-3">
+                                  <div class="image-container">
+                                    <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <div class="user-info">
+                                      <p class="reviewer-name">Emily</p>
+                                      <p class="review-date">23/01/2025</p>
+                                    </div>
+                                    <div class="rating mt-2 text-center">
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star-half-alt filled"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-body">
+                                  
+                                  <div class="review-text">
+                                    <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                    <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  
+                            <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                              <div class="card testimonial-card">
+                                <div class="reviewer-info mt-3">
+                                  <div class="image-container">
+                                    <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <div class="user-info">
+                                      <p class="reviewer-name">Emily</p>
+                                      <p class="review-date">23/01/2025</p>
+                                    </div>
+                                    <div class="rating mt-2 text-center">
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star filled"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star-half-alt filled"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-body">
+                                  
+                                  <div class="review-text">
+                                    <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                    <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>   
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item --carousel-inner">
+                      <div class="--cards-wrapper container">
+                        <div id="feedback" class="row">
+                          <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                            <div class="card testimonial-card">
+                              <div class="reviewer-info mt-3">
+                                <div class="image-container">
+                                  <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="user-info">
+                                    <p class="reviewer-name">Emily</p>
+                                    <p class="review-date">23/01/2025</p>
+                                  </div>
+                                  <div class="rating mt-2 text-center">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt filled"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                
+                                <div class="review-text">
+                                  <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                  <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                          <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                            <div class="card testimonial-card">
+                              <div class="reviewer-info mt-3">
+                                <div class="image-container">
+                                  <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="user-info">
+                                    <p class="reviewer-name">Emily</p>
+                                    <p class="review-date">23/01/2025</p>
+                                  </div>
+                                  <div class="rating mt-2 text-center">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt filled"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                
+                                <div class="review-text">
+                                  <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                  <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                          <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                            <div class="card testimonial-card">
+                              <div class="reviewer-info mt-3">
+                                <div class="image-container">
+                                  <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="user-info">
+                                    <p class="reviewer-name">Emily</p>
+                                    <p class="review-date">23/01/2025</p>
+                                  </div>
+                                  <div class="rating mt-2 text-center">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt filled"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                
+                                <div class="review-text">
+                                  <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                  <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>   
+                      </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item --carousel-inner">
+                      <div class="--cards-wrapper container">
+                        <div id="feedback" class="row">
+                          <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                            <div class="card testimonial-card">
+                              <div class="reviewer-info mt-3">
+                                <div class="image-container">
+                                  <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="user-info">
+                                    <p class="reviewer-name">Emily</p>
+                                    <p class="review-date">23/01/2025</p>
+                                  </div>
+                                  <div class="rating mt-2 text-center">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt filled"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                
+                                <div class="review-text">
+                                  <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                  <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                          <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                            <div class="card testimonial-card">
+                              <div class="reviewer-info mt-3">
+                                <div class="image-container">
+                                  <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="user-info">
+                                    <p class="reviewer-name">Emily</p>
+                                    <p class="review-date">23/01/2025</p>
+                                  </div>
+                                  <div class="rating mt-2 text-center">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt filled"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                
+                                <div class="review-text">
+                                  <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                  <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                          <div class="col-12 col-lg-4 col-md-6 --gap-10px">
+                            <div class="card testimonial-card">
+                              <div class="reviewer-info mt-3">
+                                <div class="image-container">
+                                  <img src="./assets/images/users/user1.jpg" alt="User Image" class="card-img-top">
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="user-info">
+                                    <p class="reviewer-name">Emily</p>
+                                    <p class="review-date">23/01/2025</p>
+                                  </div>
+                                  <div class="rating mt-2 text-center">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt filled"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                      <div class="review-text">
+                                        <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum sapiente saepe sit necessitatibus. Ipsa, cumque commodi amet accusamus, animi ipsum, numquam obcaecati qui porro dolores corrupti doloremque? Expedita, harum!
+                                        <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>   
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add more carousel items for additional reviews -->
+                   <!--  <button class="carousel-control-prev feedback-scroller-left" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next feedback-scroller-right" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+                </div>
+              </div>
+              <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#feedbackCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#feedbackCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#feedbackCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div> -->
+            </div>
+           
+          </div> 
+        </section>
+          <!-- customers feedback end -->
+           <!-- you can trust us start -->
+        <section>
+          <h2 data-aos="fade-left" class="section-title text-center">You can trust US</h2>
+          <div class="container mt-5">
+            <div class="row">
+              <div data-aos="fade-up" class="col-6 col-md-3 --you-can-trust-card">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div class="img-container">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  <p class="--stats">1000+</p>
+                  <p class="--stats-name">Customer Statisfaction</p>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="col-6 col-md-3 --you-can-trust-card">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div class="img-container">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <p  class="--stats">900+</p>
+                  <p class="--stats-name">Properties listed</p>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="col-6 col-md-3 --you-can-trust-card">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div class="img-container">
+                    <i class="fa-solid fa-city"></i>
+                  </div>
+                  <p class="--stats">100+</p>
+                  <p class="--stats-name">Cities Covered</p>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="col-6 col-md-3 --you-can-trust-card">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div class="img-container">
+                    <i class="fa-solid fa-chart-area"></i>
+                  </div>
+                  <p class="--stats">700+</p>
+                  <p class="--stats-name">Attractive Offers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> 
+        <!-- you can truct us end -->
+        <!-- contact option starts -->
+        <section>
+          <div class="container">
+            <div class="row d-flex justify-content-center align-items-center gap-2">
+              <div data-aos="fade-left" class="col-12 col-md-5 --search-property-contact-us">
+                <div class="container">
+                  <div class="row mb-3">
+                    <div class="col-12 h2">
+                      Are you looking for a property?
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="./properties.html" class="btn --search-property-contact-us-button">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-aos="fade-right" class="col-12 col-md-5 --list-property-contact-us">
+                <div class="container">
+                  <div class="row mb-3">
+                    <div class="col-12 h2">
+                      Do you want to list your property?
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="./listYourHome.html" class="btn --list-property-contact-us-button">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- contact option ends -->
+    </main>
+    <footer data-aos="zoom-out-down" class="mt-4 bg-light text-dark py-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">About our company</h5>
+            <p class="--text-format">
+              Blue Brick is a trusted real estate organization dedicated to providing comprehensive solutions for individuals interested in buying verified homes or renting living spaces. The company offers an end-to-end service, ensuring a hassle-free and secure process for both buyers and renters. For home buyers, Blue Brick takes charge of finding the perfect property, meticulously verifying all legal documents, and conducting thorough background checks on sellers to ensure authenticity. If needed, Blue Brick also assists buyers with financial assessments and planning, helping them make informed decisions about purchasing a property.
+            </p>
+          </div>
+          <!-- Navigation Section -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Navigations</h5>
+            <ul class="list-unstyled">
+              <li><a href="./home.html" class="--navigation-text text-decoration-none">Home</a></li>
+              <li><a href="./blogs.html" class="--navigation-text text-decoration-none">Blogs</a></li>
+              <li><a href="./about.html" class="--navigation-text text-decoration-none">About Us</a></li>
+              <li><a href="#" class="--navigation-text text-decoration-none">Privacy Policy</a></li>
+              <li><a href="./contact.html" class="--navigation-text text-decoration-none">Contact Us</a></li>
+              <li><a href="./listYourHome.html" class="--navigation-text text-decoration-none">List your property</a></li>
+            </ul>
+          </div>
+          <!-- Live Streaming Section -->
+          <div class="col-12 col-md-4 mb-4 mb-md-2">
+            <h5 class="mb-3">Watch Live Streaming</h5>
+            <iframe width="100%" height="90%" src="https://www.youtube.com/embed/sffNGTPCgRI" title="My Home Tour || Tamanna Bhatia || videography ||" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <!-- Subscribe Section -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Subscribe</h5>
+            <form class="d-flex">
+              <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+              <button class="btn --subscribe-button">Subscribe</button>
+            </form>
+          </div>
+          <!-- Follow Us Section -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="text-dark"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              Copyright © 2025 All rights reserved | This website is made by 
+              <a href="#" class="text-dark text-decoration-none">BinaryDevs</a>
+            </p>
+          </div>
+        </div>
+      </div>
+  </footer>   
+</body>
+<script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./scripts/playButton.js"></script>
+<script src="./scripts/navbar_animation.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 100, // Controls when the animation starts
+    duration: 600, // Slower animation to prevent glitches
+  });
+</script>
+
+</html>

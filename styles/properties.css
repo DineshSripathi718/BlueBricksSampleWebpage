@@ -1,0 +1,153 @@
+@import url('./root.css');
+
+
+main{
+    margin-top: 100px;
+}
+
+.--information-section p{
+    font-size: 18px;
+    font-weight: 500;
+    color : rgb(71, 70, 70);
+    margin: 0px;
+}
+
+
+.--information-section ul li{
+    color : rgb(80, 78, 78);
+    font-size: 15px;
+}
+
+.--information{
+    color: rgb(61, 61, 61);
+}
+
+.--offer-badge{
+    background-color: red;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    text-align: center;
+    color : white;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+    transform: translateX(100%);
+    transform: translateX(2%);
+}
+
+.--contact-us{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+}
+
+.--contact-us:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+  }
+  .play-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .--view-more-card{
+    background-color: var(--primary-color);
+    color : white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+  }
+  .--view-more-card a{
+    color : white;
+    transition: color 0.2s linear;
+  }
+  
+  .--view-more-card:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .--view-more-card:hover a{
+    color : var(--primary-color);
+  }
+  
+  .search-card{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.505);
+    padding : 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+
+  .search-card button{
+    background-color: var(--primary-color);
+    color : white;
+    transition : background-color 0.2s linear,
+                color .2s linear;
+  }
+
+  .search-card button:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .dropdown button{
+    background-color: var(--primary-color);
+    color : white;
+  }
+
+
+  .dropdown button:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .--offcanvas-title{
+    color : var(--primary-color);
+    font-size: 2rem;
+  }
+
+  .--offcanvas-sub-title{
+    color : var(--primary-color);
+    font-size: 1.2rem;
+  }
+  

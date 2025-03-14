@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header id="header" class="position-fixed bg-light top-0 start-0 w-100  z-3">
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                  <!-- Brand Logo and Name -->
+                  <a href="./home.html" class="navbar-brand d-flex align-items-center">
+                      <img src="./assets/logo/bluebricks_logo" alt="BlueBricks Logo" class="logo">
+                      <h3 class="ms-2 mb-0">BlueBricks</h3>
+                  </a>
+              
+                  <!-- Toggler for Mobile View -->
+                  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              </div>
+              
+      
+              <!-- Navbar Links with Space -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a href="./home.html" class="nav-link">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./properties.html" class="nav-link">Properties</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./about.html" class="nav-link">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./blogs.html" class="nav-link">Blogs</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./contact.html" class="nav-link">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./listYourHome.html" class="nav-link">List Your Home</a>
+                      </li>
+                  </ul>
+              </div>
+              
+          </div>
+      </nav>        
+    </header>
+
+    <!-- Hero Section -->
+    <main class="mt-5">
+        <div class="hero-section">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    
+        <!-- Contact Form Section -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn --send-button">Send</button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-6 contact-info">
+                    <h5>Contact Info</h5>
+                    <p><strong>Address:</strong> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    <p><strong>Phone:</strong> +1 234 567 890</p>
+                    <p><strong>Email:</strong> contact@apart.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer data-aos="zoom-out-down" class="mt-4 bg-light text-dark py-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">About our company</h5>
+            <p class="--text-format">
+              Blue Brick is a trusted real estate organization dedicated to providing comprehensive solutions for individuals interested in buying verified homes or renting living spaces. The company offers an end-to-end service, ensuring a hassle-free and secure process for both buyers and renters. For home buyers, Blue Brick takes charge of finding the perfect property, meticulously verifying all legal documents, and conducting thorough background checks on sellers to ensure authenticity. If needed, Blue Brick also assists buyers with financial assessments and planning, helping them make informed decisions about purchasing a property.
+            </p>
+          </div>
+          <!-- Navigation Section -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Navigations</h5>
+            <ul class="list-unstyled">
+              <li><a href="./home.html" class="--navigation-text text-decoration-none">Home</a></li>
+              <li><a href="./blogs.html" class="--navigation-text text-decoration-none">Blogs</a></li>
+              <li><a href="./about.html" class="--navigation-text text-decoration-none">About Us</a></li>
+              <li><a href="#" class="--navigation-text text-decoration-none">Privacy Policy</a></li>
+              <li><a href="./contact.html" class="--navigation-text text-decoration-none">Contact Us</a></li>
+              <li><a href="./listYourHome.html" class="--navigation-text text-decoration-none">List your property</a></li>
+            </ul>
+          </div>
+          <!-- Live Streaming Section -->
+          <div class="col-12 col-md-4 mb-4 mb-md-2">
+            <h5 class="mb-3">Watch Live Streaming</h5>
+            <iframe width="100%" height="90%" src="https://www.youtube.com/embed/sffNGTPCgRI" title="My Home Tour || Tamanna Bhatia || videography ||" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <!-- Subscribe Section -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Subscribe</h5>
+            <form class="d-flex">
+              <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+              <button class="btn --subscribe-button">Subscribe</button>
+            </form>
+          </div>
+          <!-- Follow Us Section -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="text-dark"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              Copyright © 2025 All rights reserved | This website is made by 
+              <a href="#" class="text-dark text-decoration-none">BinaryDevs</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>  
+</body>
+<script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./scripts/navbar_animation.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

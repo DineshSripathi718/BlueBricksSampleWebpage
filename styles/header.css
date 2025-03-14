@@ -1,0 +1,75 @@
+@import url('./root.css');
+
+.navbar{
+    background-color: white;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    transition: transform .5s linear;
+    animation : top-down .5s linear;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes top-down{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.--width-65{
+    width: 65%;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+
+.nav-item{
+    border-radius: 10px;
+    transition: background-color .1s linear;
+}
+
+.nav-item:hover{
+    background-color: var(--primary-color);
+}
+
+
+.nav-item:hover .nav-link{
+    color: white;
+}
+
+.navbar-nav {
+    display: flex;
+    background-color: white;
+    gap: 20px; /* Adds space between the items */
+    align-items: center; /* Vertically centers the items */
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap; /* Prevents wrapping of text */
+    padding: 8px 12px; /* Adjust padding for better spacing */
+    transition: color 0.3s ease;
+}
+
+
+/* Optional: Adjust font size and spacing for mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px; /* Smaller gap for vertical layout */
+    }
+}
+
